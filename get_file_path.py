@@ -34,9 +34,9 @@ def parser() -> None:
 
 def check_arguments_errors(args: argparse.Namespace) -> None:
 	if not os.path.exists(args.inputTrain):
-		raise (ValueError(f"Invalid input folder path: {os.path.abspath(args.inputAnno)}"))
+		raise (ValueError(f"Invalid input folder path: {os.path.abspath(args.inputTrain)}"))
 	if not os.path.exists(args.inputTest):
-		raise (ValueError(f"Invalid input folder path: {os.path.abspath(args.inputImages)}"))
+		raise (ValueError(f"Invalid input folder path: {os.path.abspath(args.inputTest)}"))
 
 
 def main() -> None:
